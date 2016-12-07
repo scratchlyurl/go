@@ -1,0 +1,99 @@
+<script>
+
+document.write('Redirecting...');
+
+// VARIABLES
+// scratch.us.to/[type]*****
+// scratch.us.to/[fullinfo]
+// scratch.us.to/*[info]
+
+
+var url = document.location.toString();
+var search = url.search('#')+2;
+var fullinfo = url.substring(search, search+200);
+var info = url.substring(search+1, search+200);
+
+var info2 = info.split('/').join('')
+
+var type = fullinfo.substring(0,1);
+
+console.log('Info: ' + info);
+console.log('Type: ' + type);
+console.log('a ' + info2);
+
+
+if (isNaN(type) === false) {
+        window.location = "https://scratch.mit.edu/projects/" + fullinfo;}
+
+
+if (type == 's') {
+    window.location = "https://scratch.mit.edu/studios/" + info;}
+
+if (type == 'c') {
+    window.location = "https://scratch.mit.edu/studios/" + info2 + '/comments/'}
+
+if (type == 'm') {
+    window.location = "https://scratch.mit.edu/studios/" + info2 + '/curators/'}
+
+if (type == 'a') {
+    window.location = "https://scratch.mit.edu/studios/" + info2 + '/activity/'}
+
+
+if (type == 'd') {
+    window.location = "https://scratch.mit.edu/discuss/" + info;}
+
+if (type == 't' & fulldata != '') {
+    window.location = "https://scratch.mit.edu/discuss/topic/" + info;}
+
+
+
+if (type == '@') {
+        window.location = "https://scratch.mit.edu/users/" + info;}
+
+if (type == '.') {
+    window.location = "https://scratch.mit.edu/users/" + info + "/projects/";}
+
+if (type == ',') {
+    window.location = "https://scratch.mit.edu/users/" + info + "/favorites/";}
+
+if (type == ':') {
+    window.location = "https://scratch.mit.edu/users/" + info + "/studios_following/";}
+
+if (type == '*') {
+    window.location = "https://scratch.mit.edu/users/" + info + "/studios/";}
+
+if (type == ';') {
+    window.location = "https://scratch.mit.edu/users/" + info + "/following/";}
+
+if (type == '+') {
+    window.location = "https://scratch.mit.edu/users/" + info + "/followers/";}
+
+
+
+if (type == '-') {
+        window.location = "https://scratch.mit.edu/" + info;}
+
+
+if (isNaN(type) === true & type != 's' & type != 'd' & type != 't' & type != '@' & type != 't') {
+}
+
+
+if (type == '') {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
