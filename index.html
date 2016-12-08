@@ -8,6 +8,24 @@ document.write('Redirecting...');
 // scratch.us.to/*[info]
 
 
+// ==UserScript==
+// @name         New Userscript
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://github.com/scratchlyurl/go/edit/master/index.html
+// @grant        none
+// ==/UserScript==
+
+document.write('Redirecting...');
+
+// VARIABLES
+// scratch.us.to/[type]*****
+// scratch.us.to/[fullinfo]
+// scratch.us.to/*[info]
+
+
 var url = document.location.toString();
 var search = url.search('#')+2;
 var nfullinfo = url.substring(search, search+200);
@@ -24,77 +42,92 @@ console.log('Info: ' + info);
 console.log('Type: ' + type);
 console.log('Info2: ' + info2);
 
+switch(type) {
 
-if (type == 'p') {
-    window.location = "https://scratch.mit.edu/projects/" + info;}
+    case 'p':
+        window.location = "https://scratch.mit.edu/projects/" + info;      break;
 
-if (type == 'e') {
-    window.location = "https://scratch.mit.edu/projects/" + info2 + "/#editor"}
 
-if (type == 'y'){
-    window.location = "https://scratch.mit.edu/discuss/youtube" + info + "/"
+case 'e':
+window.location = "https://scratch.mit.edu/projects/" + info2 + "/#editor";      break;
+
+
+case 'y':
+window.location = "https://scratch.mit.edu/discuss/youtube/" + info + "/";      break;
+
+case 's':
+window.location = "https://scratch.mit.edu/studios/" + info;       break;
+
+
+case 'c':
+window.location = "https://scratch.mit.edu/studios/" + info2 + '/comments/';       break;
+
+
+case 'm':
+window.location = "https://scratch.mit.edu/studios/" + info2 + '/curators/';       break;
+
+
+case 'a':
+window.location = "https://scratch.mit.edu/studios/" + info2 + '/activity/';      break;
+
+
+
+case 'd':
+window.location = "https://scratch.mit.edu/discuss/" + ninfo;       break;
+
+
+case 't' & fullinfo != '':
+window.location = "https://scratch.mit.edu/discuss/topic/" + info;       break;
+
+
+
+
+case '@':
+window.location = "https://scratch.mit.edu/users/" + ninfo;      break;
+
+
+case '.':
+window.location = "https://scratch.mit.edu/users/" + ninfo + "/projects/";      break;
+
+
+case ',':
+window.location = "https://scratch.mit.edu/users/" + ninfo + "/favorites/";      break;
+
+
+case ':':
+window.location = "https://scratch.mit.edu/users/" + ninfo + "/studios_following/";      break;
+
+
+case '*':
+window.location = "https://scratch.mit.edu/users/" + ninfo + "/studios/";      break;
+
+
+case ';':
+window.location = "https://scratch.mit.edu/users/" + ninfo + "/following/";      break;
+
+case '+':
+window.location = "https://scratch.mit.edu/users/" + ninfo + "/followers/";      break;
+
+
+
+
+case '-':
+window.location = "https://scratch.mit.edu/" + info;      break;
+
+
+
+
+case '?':
+window.location = "https://wiki.scratch.mit.edu/wiki/" + ninfo;      break;
+
+
+case '!':
+window.location = "https://wiki.scratch.mit.edu/wiki/Category:" + ninfo;      break;
+
+    default:
+
+
 }
-
-if (type == 's') {
-    window.location = "https://scratch.mit.edu/studios/" + info;}
-
-if (type == 'c') {
-    window.location = "https://scratch.mit.edu/studios/" + info2 + '/comments/'}
-
-if (type == 'm') {
-    window.location = "https://scratch.mit.edu/studios/" + info2 + '/curators/'}
-
-if (type == 'a') {
-    window.location = "https://scratch.mit.edu/studios/" + info2 + '/activity/'}
-
-
-if (type == 'd') {
-    window.location = "https://scratch.mit.edu/discuss/" + ninfo;}
-
-if (type == 't' & fullinfo != '') {
-    window.location = "https://scratch.mit.edu/discuss/topic/" + info;}
-
-
-
-if (type == '@') {
-        window.location = "https://scratch.mit.edu/users/" + ninfo;}
-
-if (type == '.') {
-    window.location = "https://scratch.mit.edu/users/" + ninfo + "/projects/";}
-
-if (type == ',') {
-    window.location = "https://scratch.mit.edu/users/" + ninfo + "/favorites/";}
-
-if (type == ':') {
-    window.location = "https://scratch.mit.edu/users/" + ninfo + "/studios_following/";}
-
-if (type == '*') {
-    window.location = "https://scratch.mit.edu/users/" + ninfo + "/studios/";}
-
-if (type == ';') {
-    window.location = "https://scratch.mit.edu/users/" + ninfo + "/following/";}
-if (type == '+') {
-    window.location = "https://scratch.mit.edu/users/" + ninfo + "/followers/";}
-
-
-
-if (type == '-') {
-    if (ninfo == '') {
-        window.location = "https://scratch.mit.edu/";}
-        else {
-     window.location = "https://scratch.mit.edu/" + info;}}
-
-
-
-if (type == '?') {
-    window.location = "https://wiki.scratch.mit.edu/wiki/" + ninfo}
-
-if (type == '!') {
-    window.location = "https://wiki.scratch.mit.edu/wiki/Category:" + ninfo}
-        
-        
-        
-if (type == '') {}
 
 
 
