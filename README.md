@@ -12,7 +12,6 @@ http://scrat.ga <br>
 
 Please note, you need one of the domains above before any of the URL codes for them to work.
 
-#No decoding
 URL Code | How it is Used
 ------------ | -------------
 `/@` | add the username of a scratcher at the end to go directly to their profile
