@@ -12,6 +12,18 @@ http://scrat.ga <br>
 
 Please note, you need one of the domains above before any of the URL codes for them to work.
 
+#No decoding
+URL Code | How it is Used
+------------ | -------------
+`/@` | add the username of a scratcher at the end to go directly to their profile
+`/.` | add the username of a scratcher at the end to see all of their shared projects
+`/,` | add the username of a scratcher at the end to see all of the projects they have favourited
+`/:` | add the username of a scratcher at the end to see all of the studios they are following
+`/*` | add the username of a scratcher at the end to see all of the studios they curate
+`/;` | add the username of a scratcher at the end to see all of the users they follow
+`/+` | add the username of a scratcher at the end to see all of the users that follow them
+
+#Base 36 decoding
 URL Code | How it is Used
 ------------ | -------------
 `/` | after the slash add a project id (the numbers after https://scratch.mit.edu/projects/) to take you directly to that project
@@ -31,4 +43,3 @@ URL Code | How it is Used
 `/-` | add anything to take you anywhere else you can find on the scratch website (eg. http://scratch.us.to/-go will take you to https://scratch.mit.edu/go)
 `/?` | add the name of a wiki article
 `/!` | add the name of a wiki category
-
