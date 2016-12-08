@@ -22,11 +22,11 @@ var type = nfullinfo.substring(0,1);
 
 console.log('Info: ' + info);
 console.log('Type: ' + type);
-console.log('a ' + info2);
+console.log('Info2: ' + info2);
 
 
-if (isNaN(fullinfo.substring(0,1)) === false & fullinfo != '') {
-    window.location = "https://scratch.mit.edu/projects/" + fullinfo;}
+if (type == 'p') {
+    window.location = "https://scratch.mit.edu/projects/" + info;}
 
 if (type == 'e') {
     window.location = "https://scratch.mit.edu/projects/" + info2 + "/#editor"}
@@ -81,7 +81,7 @@ if (type == '-') {
     if (ninfo == '') {
         window.location = "https://scratch.mit.edu/";}
         else {
-     window.location = "https://scratch.mit.edu/" + info;}}
+     window.location = "https://scratch.mit.edu/" + ninfo;}}
 
 
 
