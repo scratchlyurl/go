@@ -47,7 +47,7 @@ if (type == 'a') {
 
 
 if (type == 'd') {
-    window.location = "https://scratch.mit.edu/discuss/" + info;}
+    window.location = "https://scratch.mit.edu/discuss/" + ninfo;}
 
 if (type == 't' & fullinfo != '') {
     window.location = "https://scratch.mit.edu/discuss/topic/" + info;}
@@ -78,7 +78,10 @@ if (type == '+') {
 
 
 if (type == '-') {
-     window.location = "https://scratch.mit.edu/" + info;}
+    if (ninfo == '') {
+        window.location = 'https://scratch.mit.edu/";}
+        else {
+     window.location = "https://scratch.mit.edu/" + info;}}
 
 
 
