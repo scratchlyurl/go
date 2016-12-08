@@ -28,6 +28,9 @@ URL Code | How it is Used
 
 
 #Base 36 decoding
+
+To use this, you will need to convert what you add after the URL code to base 36.
+
 URL Code | How it is Used
 ------------ | -------------
 `/` | after the slash add a project id (the numbers after https://scratch.mit.edu/projects/) to take you directly to that project
