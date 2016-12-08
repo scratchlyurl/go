@@ -29,3 +29,4 @@ URL Code | How it is Used
 `/;` | add the username of a scratcher at the end to see all of the users they follow
 `/+` | add the username of a scratcher at the end to see all of the users that follow them
 `/-` | add anything to take you anywhere else you can find on the scratch website (eg. http://scratch.us.to/-go will take you to https://scratch.mit.edu/go)
+`/?` | add the name of a wiki article
