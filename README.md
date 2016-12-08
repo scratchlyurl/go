@@ -7,15 +7,14 @@ http://scratch.us.to <br>
 http://s.crat.cf <br>
 http://s.tn.my <br>
 http://scrat.ga <br>
-http://s.crat.cf <br>
 
 ## Use of scratchly
 
-Please note, you need one of the domains above before any of the url codes for them to work.
+Please note, you need one of the domains above before any of the URL codes for them to work.
 
-Url Code | How it is Used
+URL Code | How it is Used
 ------------ | -------------
-`/` | after the slash add a project id (the number/s after https://scratch.mit.edu/projects/) to take you directly to that project
+`/` | after the slash add a project id (the numbers after https://scratch.mit.edu/projects/) to take you directly to that project
 `/s` | add a studio id (the number/s after https://scratch.mit.edu/studios/) at the end to take you to the project section of the studio
 `/c` | add a studio id (the number/s after https://scratch.mit.edu/studios/) at the end to take you to the comment section of the studio
 `/m` | add a studio id (the number/s after https://scratch.mit.edu/studios/) at the end to take you to the curator section of the studio
