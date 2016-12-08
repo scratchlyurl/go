@@ -12,7 +12,7 @@ http://scrat.ga <br>
 
 Please note, you need one of the domains above before any of the URL codes for them to work.
 
-URL Code | How it is Used
+URL Code | What to add
 ------------ | -------------
 `/@` | add the username of a scratcher at the end to go directly to their profile
 `/.` | add the username of a scratcher at the end to see all of their shared projects
@@ -26,13 +26,13 @@ URL Code | How it is Used
 `/d` | add a discussion forum id (the number/s after https://scratch.mit.edu/discuss/) at the end to take you to that certain forum thread
 
 
-#Base 36 decoding
+###Base 36 decoding
 
-To use this, you will need to convert what you add after the URL code to base 36.
+To use the shortener for projects, studios or anything else, you will need to convert what you add after the URL code to base 36.
 
-URL Code | How it is Used
+URL Code | What to add
 ------------ | -------------
-`/` | after the slash add a project id (the numbers after https://scratch.mit.edu/projects/) to take you directly to that project
+`/p` | add a project id (the numbers after https://scratch.mit.edu/projects/) to take you directly to that project
 `/s` | add a studio id (the number/s after https://scratch.mit.edu/studios/) at the end to take you to the project section of the studio
 `/c` | add a studio id (the number/s after https://scratch.mit.edu/studios/) at the end to take you to the comment section of the studio
 `/m` | add a studio id (the number/s after https://scratch.mit.edu/studios/) at the end to take you to the curator section of the studio
