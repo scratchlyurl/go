@@ -24,6 +24,7 @@ URL Code | What to add
 `/?` | add the name of a wiki article
 `/!` | add the name of a wiki category
 `/d` | add a discussion forum id (the number/s after https://scratch.mit.edu/discuss/) at the end to take you to that certain forum thread
+`/y` | add a Youtube video id (Scratch Youtube video player)
 
 
 ###Base 36 decoding
@@ -33,6 +34,8 @@ To use the shortener for projects, studios or anything else, you will need to co
 URL Code | What to add
 ------------ | -------------
 `/p` | add a project id (the numbers after https://scratch.mit.edu/projects/) to take you directly to that project
+`/e` | add a project id (the numbers after https://scratch.mit.edu/projects/) to take you directly to that project editor
+`/f` | add a project id (the numbers after https://scratch.mit.edu/projects/) to take you directly to that project fullscreen mode
 `/s` | add a studio id (the number/s after https://scratch.mit.edu/studios/) at the end to take you to the project section of the studio
 `/c` | add a studio id (the number/s after https://scratch.mit.edu/studios/) at the end to take you to the comment section of the studio
 `/m` | add a studio id (the number/s after https://scratch.mit.edu/studios/) at the end to take you to the curator section of the studio
