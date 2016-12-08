@@ -48,22 +48,22 @@ if (type == '@') {
         window.location = "https://scratch.mit.edu/users/" + ninfo;}
 
 if (type == '.') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/projects/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/projects/";}
 
 if (type == ',') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/favorites/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/favorites/";}
 
 if (type == ':') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/studios_following/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/studios_following/";}
 
 if (type == '*') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/studios/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/studios/";}
 
 if (type == ';') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/following/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/following/";}
 
 if (type == '+') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/followers/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/followers/";}
 
 
 
@@ -81,5 +81,3 @@ if (type == '!') {
         
         
 if (type == '') {}
-
-
