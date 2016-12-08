@@ -10,19 +10,22 @@ document.write('Redirecting...');
 
 var url = document.location.toString();
 var search = url.search('#')+2;
-var fullinfo = url.substring(search, search+200);
-var info = url.substring(search+1, search+200);
+var nfullinfo = url.substring(search, search+200);
+var ninfo = url.substring(search+1, search+200);
+var info = parseInt(ninfo, 36).toString();
+var fullinfo = parseInt(nfullinfo, 36).toString();
 
-var info2 = info.split('/').join('')
 
-var type = fullinfo.substring(0,1);
+var info2 = info.split('/').join('');
+
+var type = nfullinfo.substring(0,1);
 
 console.log('Info: ' + info);
 console.log('Type: ' + type);
 console.log('a ' + info2);
 
 
-if (isNaN(type) === false & fullinfo != '') {
+if (isNaN(fullinfo.substring(0,1)) === false & fullinfo != '') {
     window.location = "https://scratch.mit.edu/projects/" + fullinfo;}
 
 if (type == 'e') {
@@ -52,25 +55,25 @@ if (type == 't' & fullinfo != '') {
 
 
 if (type == '@') {
-        window.location = "https://scratch.mit.edu/users/" + info;}
+        window.location = "https://scratch.mit.edu/users/" + ninfo;}
 
 if (type == '.') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/projects/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/projects/";}
 
 if (type == ',') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/favorites/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/favorites/";}
 
 if (type == ':') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/studios_following/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/studios_following/";}
 
 if (type == '*') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/studios/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/studios/";}
 
 if (type == ';') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/following/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/following/";}
 
 if (type == '+') {
-    window.location = "https://scratch.mit.edu/users/" + info + "/followers/";}
+    window.location = "https://scratch.mit.edu/users/" + ninfo + "/followers/";}
 
 
 
@@ -88,6 +91,7 @@ if (type == '!') {
         
         
 if (type == '') {}
+
 
 
 
