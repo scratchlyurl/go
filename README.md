@@ -25,6 +25,7 @@ URL Code | What to add
 `/!` | add the name of a wiki category
 `/d` | add a discussion forum id (the number/s after https://scratch.mit.edu/discuss/) at the end to take you to that certain forum thread
 `/y` | add a Youtube video id (Scratch Youtube video player)
+`/-` | add anything to take you anywhere else you can find on the scratch website (leave blank for homepage)
 
 
 ###Base 36 decoding
@@ -41,4 +42,3 @@ URL Code | What to add
 `/m` | add a studio id (the number/s after https://scratch.mit.edu/studios/) at the end to take you to the curator section of the studio
 `/a` | add a studio id (the number/s after https://scratch.mit.edu/studios/) at the end to take you to the activity section of the studio
 `/t` | add a topic id (the number/s after https://scratch.mit.edu/discuss/topic/) at the end to take you to a certain topic in the forums
-`/-` | add anything to take you anywhere else you can find on the scratch website (leave blank for homepage)
